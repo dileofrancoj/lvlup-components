@@ -5,7 +5,8 @@ module.exports = {
     },
     "extends": [
         "standard-with-typescript",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "plugin:storybook/recommended"
     ],
     "overrides": [
         {
@@ -28,7 +29,7 @@ module.exports = {
         "react",
         "simple-import-sort"
     ],
-    "ignorePatterns": ["node_modules", "dist", "vite.config.ts", ".eslintrc.cjs"],
+    "ignorePatterns": ["node_modules", "dist", "vite.config.ts", ".eslintrc.cjs", "tests/*"],
     "rules": {
         "simple-import-sort/imports": "error",
         "simple-import-sort/exports": "error"
