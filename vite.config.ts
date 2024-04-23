@@ -19,6 +19,15 @@ export default defineConfig({
       entry: resolve(__dirname, 'src/index.ts'),
       name: 'lvlup-components',
       formats: ['es', 'umd']
+    },
+    rollupOptions: {
+      external: ['react', 'react-dom'],
+      output: {
+        globals: {
+          react: 'React',
+          'react-dom': 'ReactDOM'
+        }
+      }
     }
   }
 })
