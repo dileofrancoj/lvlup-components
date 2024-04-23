@@ -32,6 +32,8 @@ module.exports = {
     "ignorePatterns": ["node_modules", "dist", "vite.config.ts", ".eslintrc.cjs", "tests/*"],
     "rules": {
         "simple-import-sort/imports": "error",
-        "simple-import-sort/exports": "error"
+        "simple-import-sort/exports": "error",
+        "react/react-in-jsx-scope": "off",
+       "react/jsx-filename-extension": [0, { "extensions": [".ts", ".tsx"] }],
     }
 }
