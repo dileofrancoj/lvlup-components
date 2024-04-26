@@ -1,7 +1,7 @@
 {
   "name": "lvlup-components",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "build": "tsc && vite build",
@@ -12,11 +12,13 @@
     "build-storybook": "storybook build",
     "test": "vitest run --coverage",
     "test:watch": "vitest --watch",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "generate": "plop"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^5.1.0",
     "styled-components": "^6.1.8"
   },
   "devDependencies": {
@@ -50,6 +52,7 @@
     "eslint-plugin-storybook": "^0.8.0",
     "husky": "^8.0.0",
     "jsdom": "^24.0.0",
+    "plop": "^4.0.1",
     "prettier": "^3.2.5",
     "storybook": "^8.0.9",
     "typescript": "*",
