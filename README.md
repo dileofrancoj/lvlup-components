@@ -144,3 +144,11 @@ https://testing-library.com/docs/
 ```
   yarn add -D vitest @testing-library/react @testing-library/jest-dom jsdom
 ```
+
+### Plop
+
+"micro-generator framework" -> ejecutamos en nuestro terminal
+
+```
+yarn add -D plop
+```
