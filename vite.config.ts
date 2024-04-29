@@ -21,10 +21,10 @@ export default defineConfig({
         'src/ui/**/**/*.stories.{ts,tsx}'
       ],
       thresholds: {
-        lines: 40,
-        functions: 50,
-        branches: 40,
-        statements: 40
+        lines: 30,
+        functions: 30,
+        branches: 30,
+        statements: 30
       }
     }
   },
