@@ -3,6 +3,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 import { resolve } from 'path'
 import dts from 'vite-plugin-dts'
+import { configDefaults } from 'vitest/config'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -12,7 +13,20 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
     css: true,
-    setupFiles: './tests/setup.ts'
+    setupFiles: './tests/setup.ts',
+    coverage: {
+      include: ['src/ui/**/*.{ts,tsx}'],
+      exclude: [
+        ...configDefaults.exclude,
+        'src/ui/**/**/*.stories.{ts,tsx}'
+      ],
+      thresholds: {
+        lines: 40,
+        functions: 50,
+        branches: 40,
+        statements: 40
+      }
+    }
   },
   build: {
     lib: {
